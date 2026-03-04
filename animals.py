@@ -14,3 +14,19 @@ class Llama:
         self.name = ""
         self.species = ""
         self.date_added = date.today()
+
+
+# create instance of Llamma
+miss_fuzz = Llama()
+
+# set the properties of the instance
+miss_fuzz.name = "Miss Fuzz"
+miss_fuzz.species = "domestic llama"
+
+print("name:")
+print(miss_fuzz.name)
+print("")
+print("species:")
+print(miss_fuzz.species)
+print("")
+print(f"date_added: {miss_fuzz.date_added}")

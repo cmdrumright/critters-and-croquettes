@@ -14,3 +14,7 @@ Python Practice
       self.species = ""
       self.date_added = date.today()
   ```
+- Creating instance of class
+  ```
+  miss_fuzz = Llama()
+  ```
