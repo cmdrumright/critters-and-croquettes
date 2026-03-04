@@ -139,17 +139,91 @@ class Catfish:
         self.swimming = True
 
 
-# create instance of Llamma
+# create instances of walking classes
 miss_fuzz = Llama()
-
-# set the properties of the instance
 miss_fuzz.name = "Miss Fuzz"
 miss_fuzz.species = "domestic llama"
 
-print("name:")
+archibald = Donkey()
+archibald.name = "Archibald"
+archibald.species = "Ass"
+
+billy = Goat()
+billy.name = "Billy"
+billy.species = "fainting goat"
+
+twin_peaks = Camel()
+twin_peaks.name = "Twin Peaks"
+twin_peaks.species = "Saharan Camel"
+
+fluffy = Sheep()
+fluffy.name = "Fluffy"
+fluffy.species = "Highland Sheep"
+
+# create instances of slithering classes
+arthur = Snake()
+arthur.name = "Arthur"
+arthur.species = "king snake"
+
+sir_john = Lizard()
+sir_john.name = "Sir John"
+sir_john.species = "spotted rock hopper"
+
+issac_newton = Newt()
+issac_newton.name = "Issac Newton"
+issac_newton.species = "science newt"
+
+iggy = Iguana()
+iggy.name = "Iggy"
+iggy.species = "Australian green iguana"
+
+kermit = Frog()
+kermit.name = "Kermit"
+kermit.species = "puppet frog"
+
+# create instances of swimming classes
+popeye = Goldfish()
+popeye.name = "Popeye"
+popeye.species = "popeye goldfish"
+
+gary = Bass()
+gary.name = "Gary"
+gary.species = "Large mouth bass"
+
+hopper = Salmon()
+hopper.name = "Hopper"
+hopper.species = "red salmon"
+
+spot = Koi()
+spot.name = "Spot"
+spot.species = "orange koi"
+
+whiskers = Catfish()
+whiskers.name = "Whiskers"
+whiskers.species = "Tennessee catfish"
+
+# print walker objects
+print("Petting Area:")
 print(miss_fuzz.name)
+print(archibald.name)
+print(billy.name)
+print(twin_peaks.name)
+print(fluffy.name)
 print("")
-print("species:")
-print(miss_fuzz.species)
+
+# print slithering objects
+print("Tank:")
+print(arthur.name)
+print(sir_john.name)
+print(issac_newton.name)
+print(iggy.name)
+print(kermit.name)
 print("")
-print(f"date_added: {miss_fuzz.date_added}")
+
+# print swimming objects
+print("Pond:")
+print(popeye.name)
+print(gary.name)
+print(hopper.name)
+print(spot.name)
+print(whiskers.name)
