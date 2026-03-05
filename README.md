@@ -34,6 +34,37 @@ Python Practice
   - move class declaration into their own files
   - move files into a package folder
   - create `__init__.py` file and import modules into into
+
   ```py
   from .llama import Llama
+  ```
+
+- Methods
+
+  ```py
+  class Llama:
+  ...
+
+      def feed(self):
+          print(f"{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}")
+
+
+  miss_fuzz.feed()
+
+  ```
+
+- Dunder Methods `__str__` and `__repr__`
+  - str for human readable output
+  - repr for machine readable output
+
+  ```py
+  class Llama:
+      """LLama Class"""
+      ...
+
+      def __repr__(self) -> str:
+          return f'Llama("{self.name}","{self.species}","{self.shift}","{self.food}")'
+
+      def __str__(self) -> str:
+          return f"{self.name} is a {self.species}"
   ```
