@@ -9,17 +9,17 @@ from slithering import Frog, Iguana, Lizard, Newt, Snake
 from swimming import Bass, Catfish, Goldfish, Koi, Salmon
 
 # create instances of walking classes
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "hay")
 
-archibald = Donkey("Archibald", "Ass", "midday")
+archibald = Donkey("Archibald", "Ass", "midday", "leaves")
 
-billy = Goat("Billy", "fainting goat", "afternoon")
+billy = Goat("Billy", "fainting goat", "afternoon", "bark")
 
-twin_peaks = Camel("Twin Peaks", "Saharan Camel", "morning")
+twin_peaks = Camel("Twin Peaks", "Saharan Camel", "morning", "shrubs")
 
-fluffy = Sheep("Fluffy", "Highland Sheep", "midday")
+fluffy = Sheep("Fluffy", "Highland Sheep", "midday", "grass")
 
-cuzco = Llama("Cuzco", "emperor llama", "afternoon")
+cuzco = Llama("Cuzco", "emperor llama", "afternoon", "hay")
 
 # create instances of slithering classes
 arthur = Snake("Arthur", "king snake")
@@ -71,3 +71,11 @@ print(gary.name)
 print(hopper.name)
 print(spot.name)
 print(whiskers.name)
+
+# feed animals
+miss_fuzz.feed()
+archibald.feed()
+billy.feed()
+twin_peaks.feed()
+fluffy.feed()
+cuzco.feed()

@@ -1,12 +1,18 @@
-# Sheep class module
+"""Sheep Class Module"""
 
 from datetime import date
 
 
 class Sheep:
-    def __init__(self, name, species, shift):
+    """Sheep Class"""
+
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
         self.date_added = date.today()
         self.walking = True
+        self.food = food
+
+    def feed(self):
+        print(f"{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}")

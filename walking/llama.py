@@ -1,12 +1,18 @@
-# Llama class module
+"""Llama class module"""
 
 from datetime import date
 
 
 class Llama:
-    def __init__(self, name, species, shift):
+    """LLama Class"""
+
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.shift = shift
         self.date_added = date.today()
         self.walking = True
+        self.food = food
+
+    def feed(self):
+        print(f"{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}")
