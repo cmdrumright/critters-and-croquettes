@@ -45,14 +45,13 @@ whiskers = Catfish("Whiskers", "Tennessee catfish")
 
 # print walker objects
 print("Petting Area:")
-print(miss_fuzz.name)
-print(f"- species: {miss_fuzz.species}")
-print(f"- shift: {miss_fuzz.shift}")
-print(archibald.name)
-print(billy.name)
-print(twin_peaks.name)
-print(fluffy.name)
-print(cuzco.name)
+print(repr(twin_peaks))
+print(miss_fuzz)
+print(archibald)
+print(billy)
+print(twin_peaks)
+print(fluffy)
+print(cuzco)
 print("")
 
 # print slithering objects

@@ -14,5 +14,11 @@ class Camel:
         self.walking = True
         self.food = food
 
+    def __repr__(self) -> str:
+        return f'Camel("{self.name}","{self.species}","{self.shift}","{self.food}")'
+
+    def __str__(self) -> str:
+        return f"{self.name} is a {self.species}"
+
     def feed(self):
         print(f"{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}")
