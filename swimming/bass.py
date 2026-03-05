@@ -1,9 +1,11 @@
-# Bass class module
+"""Bass class module"""
 
 from datetime import date
 
 
 class Bass:
+    """Class for Bass"""
+
     def __init__(self, name, species):
         self.name = name
         self.species = species

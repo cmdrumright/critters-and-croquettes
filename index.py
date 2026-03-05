@@ -9,17 +9,17 @@ from slithering import Frog, Iguana, Lizard, Newt, Snake
 from swimming import Bass, Catfish, Goldfish, Koi, Salmon
 
 # create instances of walking classes
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "hay")
 
-archibald = Donkey("Archibald", "Ass", "midday")
+archibald = Donkey("Archibald", "Ass", "midday", "leaves")
 
-billy = Goat("Billy", "fainting goat", "afternoon")
+billy = Goat("Billy", "fainting goat", "afternoon", "bark")
 
-twin_peaks = Camel("Twin Peaks", "Saharan Camel", "morning")
+twin_peaks = Camel("Twin Peaks", "Saharan Camel", "morning", "shrubs")
 
-fluffy = Sheep("Fluffy", "Highland Sheep", "midday")
+fluffy = Sheep("Fluffy", "Highland Sheep", "midday", "grass")
 
-cuzco = Llama("Cuzco", "emperor llama", "afternoon")
+cuzco = Llama("Cuzco", "emperor llama", "afternoon", "hay")
 
 # create instances of slithering classes
 arthur = Snake("Arthur", "king snake")
@@ -45,14 +45,13 @@ whiskers = Catfish("Whiskers", "Tennessee catfish")
 
 # print walker objects
 print("Petting Area:")
-print(miss_fuzz.name)
-print(f"- species: {miss_fuzz.species}")
-print(f"- shift: {miss_fuzz.shift}")
-print(archibald.name)
-print(billy.name)
-print(twin_peaks.name)
-print(fluffy.name)
-print(cuzco.name)
+print(repr(twin_peaks))
+print(miss_fuzz)
+print(archibald)
+print(billy)
+print(twin_peaks)
+print(fluffy)
+print(cuzco)
 print("")
 
 # print slithering objects
@@ -71,3 +70,11 @@ print(gary.name)
 print(hopper.name)
 print(spot.name)
 print(whiskers.name)
+
+# feed animals
+miss_fuzz.feed()
+archibald.feed()
+billy.feed()
+twin_peaks.feed()
+fluffy.feed()
+cuzco.feed()
